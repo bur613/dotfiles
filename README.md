@@ -6,3 +6,4 @@
     - Discord
     - Adwaita Dark Theme
     - Xtitle
+    - Nemo Fileroller
