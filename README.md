@@ -5,3 +5,4 @@
     - Spotify 
     - Discord
     - Adwaita Dark Theme
+    - Xtitle
