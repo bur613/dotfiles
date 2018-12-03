@@ -208,7 +208,7 @@ workspace $ws3                  gaps outer $gapso
 workspace $ws3                  gaps inner $gapsi
 
 # "code" workspace
-assign [class="idea"]           $ws3
+assign [class="idea"]           $ws2
 workspace $ws2                  gaps outer $gapso
 workspace $ws2                  gaps inner $gapsi
 
