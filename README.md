@@ -7,3 +7,4 @@
     - Adwaita Dark Theme
     - Xtitle
     - Nemo Fileroller
+    - Xfce4-terminal
