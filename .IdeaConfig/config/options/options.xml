@@ -1,0 +1,19 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6418539" />
+    <property name="CommittedChanges.SplitterProportions.0" value="700" />
+    <property name="CommittedChanges.SplitterProportions.1" value="500" />
+    <property name="Default.savedEditorTheme" value="_@user_Default" />
+    <property name="android-component-compatibility-check" value="1544456508344" />
+    <property name="build.toolwindow.Build.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="defaultJdkConfigured" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Robotics/twentynineteen/build.gradle" />
+    <property name="file.gist.reindex.count" value="247" />
+    <property name="ideavim.statistics.timestamp" value="1544456502160" />
+    <property name="installed.kotlin.plugin.version" value="1.2.51-release-IJ2018.2-1" />
+    <property name="last.imported.location" value="$USER_HOME$/Robotics/twentynineteen/build.gradle" />
+    <property name="lastTip" value="1" />
+    <property name="newly.installed.api.level" value="22" />
+  </component>
+</application>

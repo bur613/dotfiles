@@ -1,0 +1,32 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/Robotics/twentynineteen" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/Robotics/twentynineteen" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/Robotics/twentynineteen" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Robotics/twentynineteen">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-182.5107.16" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1544458078178" />
+              <option name="buildTimestamp" value="1542246451458" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/Robotics" />
+  </component>
+</application>

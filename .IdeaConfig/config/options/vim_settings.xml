@@ -1,0 +1,118 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="/Dummy.txt" timestamp="1544013192369">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" timestamp="1544013184715">
+        <mark key="'" line="27" column="39" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="40" column="63" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="73" column="12" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="104" column="41" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="105" column="16" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="111" column="16" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="120" column="16" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="126" column="16" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="143" column="16" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="146" column="16" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="153" column="12" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="159" column="12" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="165" column="12" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="175" column="68" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="177" column="34" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="28" column="6" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="180" column="39" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+      <jump line="172" column="0" filename="$USER_HOME$/Robotics/twentynineteen/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RR2TeleOp.java" />
+    </jumps>
+    <registers>
+      <register name="&quot;" type="4">
+        <text>Motor</text>
+      </register>
+      <register name="-" type="4">
+        <text>Motor</text>
+      </register>
+      <register name="/" type="4">
+        <text>lock</text>
+      </register>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgICAgICB0ZWxlbWV0cnkuYWRkRGF0YSgibG9ja1NlcnZvIFBvc2l0aW9uIiwgbG9ja1NlcnZvUG9zaXRpb24pOwo=</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICBjaGFpbk1vdG9yLkRpcmVjdGlvbigxMjMpCg==</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICB0ZWwK</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICB0aGlzLnN3ZWVwU2Vydm8K</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgY2gK</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICBwcmkK</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICBkZAo=</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICBwCg==</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgdGhpcy4K</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICBsb2NrU2Vydm8uc2UK</text>
+      </register>
+      <register name=":" type="4">
+        <text>s/lock/sweep/g</text>
+      </register>
+    </registers>
+    <search>
+      <last-search>lock</last-search>
+      <last-offset />
+      <last-pattern>lock</last-pattern>
+      <last-replace>sweep</last-replace>
+      <last-substitute>lock</last-substitute>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry>2s</entry>
+        <entry>telemetry</entry>
+        <entry>s</entry>
+        <entry>lock</entry>
+      </history-search>
+      <history-cmd>
+        <entry>112,127s/lock/sweep/g</entry>
+        <entry>/28/32/s/lock/sweep/g</entry>
+        <entry>s/lock/sweep/g</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed OPEN_BRACKET</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed O</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed Y</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed R</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed T</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>

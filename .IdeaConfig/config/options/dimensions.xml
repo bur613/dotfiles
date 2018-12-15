@@ -1,0 +1,43 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1280.1024" x="414" y="81" />
+    <location key="NewModule_or_Project.wizard.0.0.1280.1024" x="282" y="141" />
+    <location key="WELCOME_SCREEN.0.0.1280.1024" x="636" y="402" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1280.1024" x="646" y="320" />
+    <location key="SettingsEditor.0.0.1280.1024" x="126" y="141" />
+    <location key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.2560.1440" x="1039" y="556" />
+    <location key="CommitChangelistDialog2.0.0.2560.1440" x="921" y="263" />
+    <location key="Vcs.Push.Dialog.0.0.2560.1440" x="939" y="361" />
+    <location key="deploy.picker.dialog.0.0.2560.1440" x="938" y="323" />
+    <location key="SettingsEditor.0.0.2560.1440" x="764" y="345" />
+    <location key="deploy.picker.dialog.0.0.1920.1080" x="640" y="278" />
+    <location key="SettingsEditor.0.0.1920.1080" x="416" y="102" />
+    <location key="CommitChangelistDialog2.0.0.1280.1024" x="259" y="37" />
+    <location key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser.0.0.1280.1024" x="215" y="173" />
+    <location key="Vcs.Push.Dialog.0.0.1280.1024" x="313" y="192" />
+    <location key="git4idea.branch.GitSmartOperationDialog.0.0.1280.1024" x="387" y="198" />
+    <location key="MergeDialog.0.0.1280.1024" x="103" y="26" />
+    <location key="MultipleFileMergeDialog.0.0.1280.1024" x="339" y="194" />
+    <location key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1280.1024" x="390" y="391" />
+    <size key="FileChooserDialogImpl.0.0.1280.1024" width="430" height="550" />
+    <size key="NewModule_or_Project.wizard.0.0.1280.1024" width="722" height="430" />
+    <size key="SettingsEditor.0.0.1280.1024" width="1018" height="698" />
+    <size key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.2560.1440" width="460" height="196" />
+    <size key="CommitChangelistDialog2.0.0.2560.1440" width="688" height="804" />
+    <size key="Vcs.Push.Dialog.0.0.2560.1440" width="641" height="625" />
+    <size key="deploy.picker.dialog.0.0.2560.1440" width="634" height="491" />
+    <size key="SettingsEditor.0.0.2560.1440" width="1022" height="710" />
+    <size key="deploy.picker.dialog.0.0.1920.1080" width="630" height="479" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1063" height="703" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="0" height="0" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="0" height="0" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="0" height="0" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="0" height="0" />
+    <size key="CommitChangelistDialog2.0.0.1280.1024" width="739" height="818" />
+    <size key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser.0.0.1280.1024" width="840" height="634" />
+    <size key="git4idea.branch.GitSmartOperationDialog.0.0.1280.1024" width="496" height="583" />
+    <size key="MergeDialog.0.0.1280.1024" width="1054" height="879" />
+    <size key="MultipleFileMergeDialog.0.0.1280.1024" width="585" height="547" />
+    <size key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1280.1024" width="490" height="198" />
+  </component>
+</application>
