@@ -9,3 +9,4 @@
     - Nemo Fileroller
     - Xfce4-terminal
     - Vim-plug
+    - xlayoutdisplay
