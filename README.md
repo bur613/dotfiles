@@ -10,3 +10,4 @@
     - Xfce4-terminal
     - Vim-plug
     - xlayoutdisplay
+    - playerctl
