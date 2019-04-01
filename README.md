@@ -11,3 +11,4 @@
     - Vim-plug
     - xlayoutdisplay
     - playerctl
+    - rofi wifi menu
