@@ -279,7 +279,7 @@ mode "resize" {
         # vim keys
         bindsym h resize grow left $resize px or $resize ppt
         bindsym k resize grow up $resize px or $resize ppt
-        bindsym j resize shrink down $resize px or $resize ppt
+        bindsym j resize grow down $resize px or $resize ppt
         bindsym l resize grow right $resize px or $resize ppt
 
         bindsym Shift+l resize shrink left $resize px or $resize ppt
@@ -291,7 +291,7 @@ mode "resize" {
         bindsym Left resize grow left $resize px or $resize ppt
         bindsym Up resize grow up $resize px or $resize ppt
         bindsym Down resize grow down $resize px or $resize ppt
-        bindsym Right resize grow right $rsize px or $resize ppt
+        bindsym Right resize grow right $resize px or $resize ppt
 
         bindsym Shift+Right resize shrink left $resize px or $resize ppt
         bindsym Shift+Down resize shrink up $resize px or $resize ppt
