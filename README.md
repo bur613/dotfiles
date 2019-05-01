@@ -12,3 +12,4 @@
     - xlayoutdisplay
     - playerctl
     - rofi wifi menu
+    - nvidia-settings
