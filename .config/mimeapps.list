@@ -1,7 +1,13 @@
-
 [Default Applications]
 text/html=chromium.desktop
 x-scheme-handler/http=chromium.desktop
 x-scheme-handler/https=chromium.desktop
 x-scheme-handler/about=chromium.desktop
 x-scheme-handler/unknown=chromium.desktop
+
+[Added Associations]
+application/zip=org.gnome.FileRoller.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=calibre-ebook-edit.desktop;
+application/x-java-archive=org.gnome.FileRoller.desktop;
+application/msword=calibre-ebook-viewer.desktop;chromium.desktop;
+application/x-compressed-tar=org.gnome.FileRoller.desktop;
