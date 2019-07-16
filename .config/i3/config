@@ -7,8 +7,10 @@
 #
 # This config is for the i3-gaps fork of i3 (github.com/airblader/i3),
 # so some settings will not work on regular i3
-#
+
 exec --no-startup-id xlayoutdisplay
+exec --no-startup-id xrandr --output DP-1-1
+exec --no-startup-id numlockx on
 
 ###############
 ## Variables ##
@@ -76,17 +78,32 @@ bindsym $mod+F7 exec sh ~/scripts/caffeine.sh
 ## Audio ##
 # volume controls
 bindsym $mod+plus exec --no-startup-id   sh ~/scripts/volume.sh +
+bindsym XF86AudioRaiseVolume exec --no-startup-id  sh ~/scripts/volume.sh +
+
 bindsym $mod+minus exec --no-startup-id   sh ~/scripts/volume.sh -
+bindsym XF86AudioLowerVolume exec --no-startup-id  sh ~/scripts/volume.sh -
+
 bindsym $mod+0 exec --no-startup-id          sh ~/scripts/volume.sh !
+bindsym XF86AudioMute exec --no-startup-id  sh ~/scripts/volume.sh !
+
+
 # microphone
 bindsym XF86AudioMicMute exec --no-startup-id       amixer set Capture toggle
 # music
 bindsym $mod+bracketleft exec --no-startup-id    sh ~/scripts/music.sh prev
 bindsym $mod+bracketright exec --no-startup-id   sh ~/scripts/music.sh next
 bindsym $mod+backslash exec --no-startup-id      sh ~/scripts/music.sh toggle
+
 bindsym $mod+KP_Begin exec playerctl play-pause
+bindsym XF86AudioPlay exec playerctl play-pause
+
 bindsym $mod+KP_Right exec playerctl next
+bindsym XF86AudioNext exec playerctl next
+
 bindsym $mod+KP_Left exec playerctl previous
+bindsym XF86AudioPrev exec playerctl previous
+
+bindsym XF86AudioStop exec playerctl pause
 
 ## Focus keybindings ##
 # focus parent / child
@@ -279,7 +296,7 @@ mode "resize" {
         # vim keys
         bindsym h resize grow left $resize px or $resize ppt
         bindsym k resize grow up $resize px or $resize ppt
-        bindsym j resize shrink down $resize px or $resize ppt
+        bindsym j resize grow down $resize px or $resize ppt
         bindsym l resize grow right $resize px or $resize ppt
 
         bindsym Shift+l resize shrink left $resize px or $resize ppt
@@ -291,7 +308,7 @@ mode "resize" {
         bindsym Left resize grow left $resize px or $resize ppt
         bindsym Up resize grow up $resize px or $resize ppt
         bindsym Down resize grow down $resize px or $resize ppt
-        bindsym Right resize grow right $rsize px or $resize ppt
+        bindsym Right resize grow right $resize px or $resize ppt
 
         bindsym Shift+Right resize shrink left $resize px or $resize ppt
         bindsym Shift+Down resize shrink up $resize px or $resize ppt
@@ -320,7 +337,7 @@ exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 
 # start pulseaudio, compositor, and set wallpaper in ~/.xinitrc
 exec --no-startup-id nm-applet
-exec --no-startup-id xautolock -time 5 -locker "betterlockscreen -s dimblur"
+exec --no-startup-id xautolock -corners -0-0 -time 5 -locker "betterlockscreen -s dimblur"
 # exec --no-startup-id redshift
 exec --no-startup-id compton -cb --config ~/.config/compton/compton.conf
 # exec --no-startup-id i3-msg 'exec /usr/bin/pulseaudio --start'
