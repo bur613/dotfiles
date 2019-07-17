@@ -14,6 +14,8 @@ exec --no-startup-id numlockx on
 
 exec_always --no-startup-id sh ~/scripts/launch_polybar.sh
 
+exec_always --no-startup-id nvidia-settings -a "DigitalVibrance=750"
+
 ###############
 ## Variables ##
 ###############
