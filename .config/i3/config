@@ -12,6 +12,8 @@ exec --no-startup-id xlayoutdisplay
 exec --no-startup-id xrandr --output DP-1-1
 exec --no-startup-id numlockx on
 
+exec_always --no-startup-id sh ~/scripts/launch_polybar.sh
+
 ###############
 ## Variables ##
 ###############
@@ -345,26 +347,28 @@ exec --no-startup-id compton -cb --config ~/.config/compton/compton.conf
 #########
 ## Bar ##
 #########
+
+
 # Start i3bar
-bar {
-    strip_workspace_numbers no
-  position top
-    #status_command i3status | ~/.config/i3status/i3status.py
-    #status_command ~/.config/i3status/wraper.sh
-    status_command i3blocks -c ~/.config/i3blocks/config.i3
-    tray_output eDP1
-    separator_symbol " "
-  font pango:Fira Mono 10.5, Awesome 10.5
-  colors {
-    background #343d46
-    statusline #eff1f5
-    separator #323232
-    focused_workspace #a3be8c #65737e #eff1f5
-    active_workspace #4f5b66 #5f676a #eff1f5
-    inactive_workspace #4f5b66 #4f5b66 #a7adba
-    urgent_workspace #bf616a #65737e #eff1f5
-  }
-}
+# bar {
+#     strip_workspace_numbers no
+#   position top
+#     #status_command i3status | ~/.config/i3status/i3status.py
+#     #status_command ~/.config/i3status/wraper.sh
+#     status_command i3blocks -c ~/.config/i3blocks/config.i3
+#     tray_output eDP1
+#     separator_symbol " "
+#   font pango:Fira Mono 10.5, Awesome 10.5
+#   colors {
+#     background #343d46
+#     statusline #eff1f5
+#     separator #323232
+#     focused_workspace #a3be8c #65737e #eff1f5
+#     active_workspace #4f5b66 #5f676a #eff1f5
+#     inactive_workspace #4f5b66 #4f5b66 #a7adba
+#     urgent_workspace #bf616a #65737e #eff1f5
+#   }
+# }
 
 # window colors
 #                           border background text indicator
