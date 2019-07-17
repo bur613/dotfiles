@@ -255,6 +255,8 @@ label-focused-foreground = #ffffff
 label-focused-underline = #ffffff
 label-focused-padding = 1
 
+label-mode-foreground = #CE5564
+
 [module/date]
 type = internal/date
 

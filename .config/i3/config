@@ -201,9 +201,8 @@ bindsym $mod+Return  exec xfce4-terminal
 # dmenu
 bindsym $mod+Shift+d exec --no-startup-id ~/scripts/dmenu_run.sh
 # rofi (more features than dmenu)
-bindsym $mod+d exec --no-startup-id rofi -show run
-bindsym $mod+p exec --no-startup-id j4-dmenu-desktop --dmenu="rofi -dmenu -p run: -i"
-bindsym $mod+w exec --no-startup-id rofi -show window
+bindsym $mod+d exec --no-startup-id rofi -lines 12 -padding 18 -width 60 -show drun
+bindsym $mod+w exec --no-startup-id rofi -padding 18 -width 60 -show window
 bindsym $mod+Shift+n exec --no-startup-id sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh
 
 for_window [title="^floating"] floating enable
@@ -240,8 +239,8 @@ workspace $ws2                  gaps inner $gapsi
 
 # Documents workspace
 assign [class="nemo"]           $ws4
-workspace $ws4                  gaps outer 20
-workspace $ws4                  gaps inner 0
+workspace $ws4                  gaps outer $gapso
+workspace $ws4                  gaps inner $gapsi
 
 # "music" workspace
 assign [class="^Spotify$"]      $ws5
