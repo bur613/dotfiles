@@ -10,7 +10,7 @@ else
     wm=${1:-i3}
 fi
 
-CMD=`echo -e "Suspend\nLogout\nReboot\nHibernate\nShutdown" | rofi -dmenu -p "Logout Menu:" -lines 6`
+CMD=`echo -e "Suspend\nLogout\nReboot\nHibernate\nShutdown" | rofi -dmenu -p "Logout Menu:" -lines 6 -width 60 -padding 18`
 
 case $wm in
     i3)
