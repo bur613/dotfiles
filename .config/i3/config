@@ -234,17 +234,21 @@ workspace $ws3                  gaps inner $gapsi
 
 # "code" workspace
 assign [class="idea"]           $ws2
+assign [class="code-oss"]       $ws2
 workspace $ws2                  gaps outer $gapso
 workspace $ws2                  gaps inner $gapsi
 
 # Documents workspace
 assign [class="nemo"]           $ws4
+assign [class="Nemo"]           $ws4
 workspace $ws4                  gaps outer $gapso
 workspace $ws4                  gaps inner $gapsi
 
 # "music" workspace
 assign [class="^Spotify$"]      $ws5
+for_window [class="^Spotify$"] move to workspace $ws5
 assign [class="spotify"]        $ws5
+for_window [class="spotify"] move to workspace $ws5
 assign [class="Rhythmbox"]      $ws5
 
 # "chat" workspace
