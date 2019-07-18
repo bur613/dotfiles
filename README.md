@@ -14,3 +14,5 @@
     - rofi wifi menu
     - nvidia-settings
     - polybar
+    - tryone compton
+    - xwindow
