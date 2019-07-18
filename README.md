@@ -16,3 +16,4 @@
     - polybar
     - tryone compton
     - xwindow
+    - xidlehook
