@@ -17,3 +17,6 @@
     - tryone compton
     - xwindow
     - xidlehook
+    - cups
+    - avahi
+    - system-config-printer
