@@ -75,9 +75,11 @@ bindsym $mod+m          gaps inner current set $gapsi; gaps outer current set $g
 # close current window
 bindsym $mod+q    kill
 # screen locking
-bindsym $mod+Ctrl+L exec --no-startup-id betterlockscreen -l
+bindsym $mod+Ctrl+L exec --no-startup-id betterlockscreen -l --lock -- --timestr '%l:%M:%S %p'
 # caffeine mode (disables screen blanking and automatic suspend)
 bindsym $mod+F7 exec sh ~/scripts/caffeine.sh
+# Screenshot
+bindsym Print exec --no-startup-id xfce4-screenshooter
 
 ## Audio ##
 # volume controls
@@ -345,7 +347,7 @@ exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 # start pulseaudio, compositor, and set wallpaper in ~/.xinitrc
 exec --no-startup-id nm-applet
 # exec --no-startup-id xautolock -corners ---- -time 5 -locker "betterlockscreen -s dimblur"
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer normal 600 'betterlockscreen -s dimblur' ''
+exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer normal 600 'betterlockscreen -s dimblur --lock -- --timestr '%l:%M:%S %p'' ''
 # exec --no-startup-id redshift
 exec --no-startup-id compton -cb --config ~/.config/compton/compton.conf
 # exec --no-startup-id i3-msg 'exec /usr/bin/pulseaudio --start'
