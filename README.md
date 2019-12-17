@@ -21,8 +21,13 @@
     - avahi
     - system-config-printer
     - lxappearance-gtk3
-    - xbacklight
+    - xorg-xbacklight
     - lightdm
     - tty-clock
     - adwaita-dark-darose
     - pavucontrol
+    - acpi
+    - bash-completion
+    - zsh-completion
+    - zsh-syntax-highlighting
+    
