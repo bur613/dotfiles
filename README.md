@@ -20,3 +20,9 @@
     - cups
     - avahi
     - system-config-printer
+    - lxappearance-gtk3
+    - xbacklight
+    - lightdm
+    - tty-clock
+    - adwaita-dark-darose
+    - pavucontrol
