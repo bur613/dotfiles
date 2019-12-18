@@ -30,4 +30,4 @@
     - bash-completion
     - zsh-completion
     - zsh-syntax-highlighting
-    
+    - betterlockscreen
