@@ -31,3 +31,5 @@
     - zsh-completion
     - zsh-syntax-highlighting
     - betterlockscreen
+    - polkit
+    - lxqt-policykit
