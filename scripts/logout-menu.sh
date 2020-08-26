@@ -38,7 +38,7 @@ case $CMD in
     Hibernate)
         systemctl hibernate;;
     Suspend)
-        systemctl suspend;;
+        betterlockscreen -s dimblur --lock -- --timestr '%l:%M:%S %p';;
 esac
 
 
