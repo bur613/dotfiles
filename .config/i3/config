@@ -8,12 +8,8 @@
 # This config is for the i3-gaps fork of i3 (github.com/airblader/i3),
 # so some settings will not work on regular i3
 
-<<<<<<< HEAD
 exec --no-startup-id xrandr --output eDP1 --auto --output DP1 --auto --scale 2x2 --right-of eDP1
 exec --no-startup-id xlayoutdisplay #-d 144
-=======
-exec --no-startup-id xlayoutdisplay -d 144
->>>>>>> 56a370ef57c26e8643bf5597898b971a4f77755a
 exec --no-startup-id numlockx on
 
 exec_always --no-startup-id sh ~/scripts/launch_polybar.sh
