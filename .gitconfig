@@ -1,2 +1,5 @@
 [alias]
 	lg = log --graph --oneline --decorate --color --abbrev-commit
+[user]
+	email = dominickb613@gmail.com
+	name = Dominick Burns
