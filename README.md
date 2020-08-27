@@ -32,4 +32,7 @@
     - zsh-syntax-highlighting
     - betterlockscreen
     - polkit
+    - numlockx
     - lxqt-policykit
+    - keepassxc
+    - rxvt-unicode

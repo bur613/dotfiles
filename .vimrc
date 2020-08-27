@@ -24,6 +24,8 @@ syntax on
 :set guioptions-=L  "remove left-hand scroll bar
 :set guioptions-=m  "remove menu bar
 
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 set noeb vb t_vb=
 au GUIEnter * set vb t_vb=
 

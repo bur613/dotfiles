@@ -8,8 +8,8 @@
 # This config is for the i3-gaps fork of i3 (github.com/airblader/i3),
 # so some settings will not work on regular i3
 
-exec --no-startup-id xlayoutdisplay
-exec --no-startup-id xrandr --output DP-1-1
+exec --no-startup-id xrandr --output eDP1 --auto --output DP1 --auto --scale 2x2 --right-of eDP1
+exec --no-startup-id xlayoutdisplay #-d 144
 exec --no-startup-id numlockx on
 
 exec_always --no-startup-id sh ~/scripts/launch_polybar.sh
@@ -80,6 +80,8 @@ bindsym $mod+Ctrl+L exec --no-startup-id betterlockscreen -l --lock -- --timestr
 bindsym $mod+F7 exec sh ~/scripts/caffeine.sh
 # Screenshot
 bindsym Print exec --no-startup-id xfce4-screenshooter
+# Xlayoutdisplay
+# bindsym $mod+Control+d exec --no-startup-id xlayoutdisplay -d 250
 
 ## Audio ##
 # volume controls
@@ -91,6 +93,10 @@ bindsym XF86AudioLowerVolume exec --no-startup-id  sh ~/scripts/volume.sh -
 
 bindsym $mod+0 exec --no-startup-id          sh ~/scripts/volume.sh !
 bindsym XF86AudioMute exec --no-startup-id  sh ~/scripts/volume.sh !
+
+## Backlight ##
+bindsym XF86MonBrightnessUp exec xbacklight -inc 1
+bindsym XF86MonBrightnessDown exec xbacklight -dec 1
 
 
 # microphone
@@ -199,7 +205,7 @@ bindsym $mod+Shift+s sticky toggle
 
 ## Applications ##
 # start terminal
-bindsym $mod+Return  exec xfce4-terminal
+bindsym $mod+Return  exec urxvt -T "Terminal -"
 # dmenu
 bindsym $mod+Shift+d exec --no-startup-id ~/scripts/dmenu_run.sh
 # rofi (more features than dmenu)
@@ -207,11 +213,11 @@ bindsym $mod+d exec --no-startup-id rofi -lines 12 -padding 18 -width 60 -show d
 bindsym $mod+w exec --no-startup-id rofi -padding 18 -width 60 -show window
 bindsym $mod+Shift+n exec --no-startup-id sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh
 
-for_window [title="^floating"] floating enable
+for_window [title="^Floating"] floating enable
 # start htop
-bindsym $mod+Ctrl+h exec i3-sensible-terminal -T floating -e htop
+bindsym $mod+Ctrl+h exec urxvt -terminal -T Floating -e htop
  # start a floating terminal
-bindsym $mod+t exec xfce4-terminal -T "floating terminal"
+bindsym $mod+t exec urxvt -T "Floating Terminal"
 
 ###################################
 ## Specific windows / workspaces ##
@@ -231,8 +237,8 @@ for_window [title="Add Downloads"]            floating enable
 # "web" workspace
 assign [class="Firefox"]        $ws3
 assign [class="Chromium"]       $ws3
-workspace $ws3                  gaps outer $gapso
-workspace $ws3                  gaps inner $gapsi
+workspace $ws3                  gaps outer 0
+workspace $ws3                  gaps inner 0
 
 # "code" workspace
 assign [class="idea"]           $ws2
@@ -247,10 +253,8 @@ workspace $ws4                  gaps outer $gapso
 workspace $ws4                  gaps inner $gapsi
 
 # "music" workspace
-assign [class="^Spotify$"]      $ws5
-for_window [class="^Spotify$"] move to workspace $ws5
-assign [class="spotify"]        $ws5
-for_window [class="spotify"] move to workspace $ws5
+assign [class="Spotify"]      $ws5
+for_window [class="Spotify"] move to workspace $ws5
 assign [class="Rhythmbox"]      $ws5
 
 # "chat" workspace
