@@ -253,8 +253,8 @@ workspace $ws4                  gaps outer $gapso
 workspace $ws4                  gaps inner $gapsi
 
 # "music" workspace
-assign [class="Spotify"]      $ws5
-for_window [class="Spotify"] move to workspace $ws5
+assign [class="Spotify$"]      $ws5
+for_window [class="Spotify$"] move to workspace $ws5
 assign [class="Rhythmbox"]      $ws5
 
 # "chat" workspace
