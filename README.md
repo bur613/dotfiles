@@ -6,6 +6,7 @@
     - Discord
     - Adwaita Dark Theme
     - Xtitle
+    - dunst
     - Nemo Fileroller
     - Xfce4-terminal
     - Vim-plug
