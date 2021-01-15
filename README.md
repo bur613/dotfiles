@@ -37,3 +37,5 @@
     - lxqt-policykit
     - keepassxc
     - rxvt-unicode
+    - st (suckless simple terminal)
+    - dropbox

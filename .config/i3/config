@@ -8,8 +8,10 @@
 # This config is for the i3-gaps fork of i3 (github.com/airblader/i3),
 # so some settings will not work on regular i3
 
-exec --no-startup-id xrandr --output eDP1 --auto --output DP1 --auto --scale 2x2 --right-of eDP1
-exec --no-startup-id xlayoutdisplay #-d 144
+#exec --no-startup-id xrandr --output eDP1 --auto --pos 0x720 --output DP1 --auto --scale 2x2 --right-of eDP1
+# exec --no-startup-id xlayoutdisplay #-d 144
+exec_always --no-startup-id sh ~/scripts/setupdisplay.sh
+
 exec --no-startup-id numlockx on
 
 exec_always --no-startup-id sh ~/scripts/launch_polybar.sh
@@ -32,7 +34,7 @@ set $gapso      5
 set $gapsi      15
 
 # terminal
-set $term xfce4-terminal
+set $term st #xfce4-terminal
 
 ###################
 ## Configuration ##
@@ -95,8 +97,8 @@ bindsym $mod+0 exec --no-startup-id          sh ~/scripts/volume.sh !
 bindsym XF86AudioMute exec --no-startup-id  sh ~/scripts/volume.sh !
 
 ## Backlight ##
-bindsym XF86MonBrightnessUp exec xbacklight -inc 1
-bindsym XF86MonBrightnessDown exec xbacklight -dec 1
+bindsym XF86MonBrightnessUp exec light -A 1
+bindsym XF86MonBrightnessDown exec light -U 1
 
 
 # microphone
@@ -205,7 +207,7 @@ bindsym $mod+Shift+s sticky toggle
 
 ## Applications ##
 # start terminal
-bindsym $mod+Return  exec urxvt -T "Terminal -"
+bindsym $mod+Return  exec st -T "Terminal -"
 # dmenu
 bindsym $mod+Shift+d exec --no-startup-id ~/scripts/dmenu_run.sh
 # rofi (more features than dmenu)
@@ -215,9 +217,9 @@ bindsym $mod+Shift+n exec --no-startup-id sh ~/scripts/rofi-wifi-menu/rofi-wifi-
 
 for_window [title="^Floating"] floating enable
 # start htop
-bindsym $mod+Ctrl+h exec urxvt -terminal -T Floating -e htop
+bindsym $mod+Ctrl+h exec st -terminal -T Floating -e htop
  # start a floating terminal
-bindsym $mod+t exec urxvt -T "Floating Terminal"
+bindsym $mod+t exec st -T "Floating Terminal"
 
 ###################################
 ## Specific windows / workspaces ##
@@ -231,11 +233,11 @@ for_window [class="^z80e-sdl$"]               floating enable
 for_window [class="Tilem2"]                   floating enable
 for_window [class="^Xfce4-appfinder$"]        floating enable
 for_window [title="VirtualBox"]               floating enable
-for_window [instance="DTA" class="Firefox"]   floating enable
+for_window [instance="DTA" class="firefox"]   floating enable
 for_window [title="Add Downloads"]            floating enable
 
 # "web" workspace
-assign [class="Firefox"]        $ws3
+assign [class="firefox"]        $ws3
 assign [class="Chromium"]       $ws3
 workspace $ws3                  gaps outer 0
 workspace $ws3                  gaps inner 0
@@ -243,6 +245,8 @@ workspace $ws3                  gaps inner 0
 # "code" workspace
 assign [class="idea"]           $ws2
 assign [class="code-oss"]       $ws2
+assign [class="atom"]           $ws2
+assign [class="Eclipse"]        $ws2
 workspace $ws2                  gaps outer $gapso
 workspace $ws2                  gaps inner $gapsi
 
@@ -253,8 +257,8 @@ workspace $ws4                  gaps outer $gapso
 workspace $ws4                  gaps inner $gapsi
 
 # "music" workspace
-assign [class="Spotify$"]      $ws5
-for_window [class="Spotify$"] move to workspace $ws5
+assign [class="^Spotify$"]      $ws5
+for_window [class="^Spotify$"] move to workspace $ws5
 assign [class="Rhythmbox"]      $ws5
 
 # "chat" workspace
@@ -346,7 +350,7 @@ bindsym $mod+Shift+i mode Ignore
 #######################################
 ##    Startup programs             ####
 #######################################
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
+#exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 
 # start pulseaudio, compositor, and set wallpaper in ~/.xinitrc
 exec --no-startup-id nm-applet
